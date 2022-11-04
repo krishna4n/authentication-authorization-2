@@ -8,10 +8,10 @@ import Cart from './components/Cart'
 
 const App = () => (
   <Switch>
-    <Route exact path="/" component={Home} />
     <Route exact path="/login" component={LoginForm} />
-    <Route path="/products" component={Products} />
-    <Route path="/cart" component={Cart} />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/products" component={Products} />
+    <Route exact path="/cart" component={Cart} />
     <Route component={NotFound} />
   </Switch>
 )
